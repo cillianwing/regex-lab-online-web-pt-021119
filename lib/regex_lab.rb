@@ -25,7 +25,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  a = phone.split
-  return true if a.scan(/\d/).length == 10 
+  a = phone.split("")
+  return true if a.grep(/\d/).length == 10
   false
 end
