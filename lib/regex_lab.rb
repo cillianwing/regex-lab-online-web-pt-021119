@@ -26,4 +26,8 @@ end
 
 def valid_phone_number?(phone)
   if text.match(/\A[1-9]\d{8}/)
+    return true 
+  else 
+    return false 
+  end
 end
